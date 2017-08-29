@@ -4,9 +4,8 @@
 
 <% tasks.forEach(task => { %>
   <div class="task">
-    <h2><%= task.title %></h2>
-    <p><%= task.status %> <%= task.category%></p>
-    <p><%= task.description %></p>
+    <h2><%= task.title %>  <%= task.status %> </h2>
+    <h3><%= task.category%></h3>
     <a href="/tasks/<%=task.id%>">See That Task</a>
   </div>
 <% }) %>

@@ -30,7 +30,7 @@ app.listen(PORT, () => {
 
 // index route
 app.get('/', (req, res) => {
-  res.render('index', { title: 'Tasks!'});
+  res.render('index', { title: 'Tasks'});
 });
 
 const taskRoutes = require('./routes/task-routes');

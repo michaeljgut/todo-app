@@ -22,5 +22,8 @@
     "method-override": "^2.3.9",
     "morgan": "^1.8.2",
     "pg-promise": "^6.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
