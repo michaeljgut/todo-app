@@ -1,0 +1,11 @@
+<% include ../partials/boilerplate %>
+  <div class="task">
+    <h2><%= task.title %></h2>
+    <p>A <%= task.status %> <%= task.category%></p>
+    <p><%= task.description %></p>
+    <a href="/tasks/<%=task.id%>/edit">Edit That Task</a>
+    <form class="delete" action="/tasks/<%=task.id%>?_method=DELETE" method="POST">
+      <input type="submit" value="Delete that task"/>
+    </form>
+  </div>
+<% include ../partials/end %>

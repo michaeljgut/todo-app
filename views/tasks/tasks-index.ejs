@@ -1,0 +1,15 @@
+<% include ../partials/boilerplate %>
+
+<a href="/tasks/new">Add a new task</a>
+
+<% tasks.forEach(task => { %>
+  <div class="task">
+    <h2><%= task.title %></h2>
+    <p><%= task.status %> <%= task.category%></p>
+    <p><%= task.description %></p>
+    <a href="/tasks/<%=task.id%>">See That Task</a>
+  </div>
+<% }) %>
+
+
+<% include ../partials/end %>
